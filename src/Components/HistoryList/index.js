@@ -1,6 +1,5 @@
 import {Component} from 'react'
 import './index.css'
-import './App.css'
 
 class HistoryList extends Component {
   render() {
@@ -19,7 +18,12 @@ class HistoryList extends Component {
             <p className="domain-name">{title}</p>
             <p className="domain-link">{domainUrl}</p>
           </div>
-          <button onClick={onDelete} type="button" className="button">
+          <button
+            testid="delete"
+            onClick={onDelete}
+            type="button"
+            className="button"
+          >
             <img
               className="delete-icon"
               alt="delete"
